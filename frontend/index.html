@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBI MF Assistant — AI-Powered Mutual Fund Q&A</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-c">
+        <div class="nav-l">
+            <div class="n-logo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="3"/></svg></div>
+            <span class="n-text">SBI MF Assistant</span>
+        </div>
+        <div class="nav-r">
+            <span class="n-badge n-badge-ai"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>RAG-Powered</span>
+            <span class="n-badge n-badge-warn">Facts Only · No Advice</span>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-mesh"><div class="mesh-orb mesh-1"></div><div class="mesh-orb mesh-2"></div><div class="mesh-orb mesh-3"></div><div class="mesh-grid"></div></div>
+    <div class="hero-c">
+        <div class="hero-center">
+            <div class="hero-pill"><span class="pill-dot"></span>Live — Updated daily from sbimf.com</div>
+            <h1 class="hero-h1">Ask anything about<br><span class="h1-grad">SBI Mutual Funds</span></h1>
+            <p class="hero-p">Get instant, cited answers from official scheme documents. Powered by retrieval-augmented generation across factsheets, SIDs, KIMs & scheme pages.</p>
+            <div class="hero-metrics">
+                <div class="hm"><div class="hm-num">4</div><div class="hm-bar hm-bar-1"></div><div class="hm-label">Schemes</div></div>
+                <div class="hm"><div class="hm-num">2,916</div><div class="hm-bar hm-bar-2"></div><div class="hm-label">Knowledge chunks</div></div>
+                <div class="hm"><div class="hm-num">19</div><div class="hm-bar hm-bar-3"></div><div class="hm-label">Official sources</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="trust">
+    <div class="trust-c">
+        <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>No investment advice</span></div>
+        <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><span>Every answer cited</span></div>
+        <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Updated daily at 9:15 AM</span></div>
+        <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span>Official sources only</span></div>
+    </div>
+</section>
+
+<section class="schemes">
+    <div class="sec-c">
+        <div class="sec-header">
+            <span class="sec-eye">Schemes covered</span>
+            <h2 class="sec-h2">Four SBI Mutual Fund schemes, fully indexed</h2>
+            <p class="sec-sub">Each scheme's factsheet, SID, KIM & live scheme page are scraped, chunked, embedded and stored for instant retrieval.</p>
+        </div>
+        <div class="s-grid">
+            <div class="s-card" data-query="What is the investment objective of SBI Large Cap Fund?">
+                <div class="sc-top sc-top-1"><div class="sc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><span class="sc-cat">Large Cap · Equity</span></div>
+                <h3 class="sc-name">SBI Large Cap Fund</h3>
+                <p class="sc-desc">Predominantly invests in large-cap companies for long-term capital appreciation with lower volatility.</p>
+                <div class="sc-sources"><span>Factsheet</span><span>SID</span><span>KIM</span><span>Scheme Page</span></div>
+                <div class="sc-footer"><span class="sc-ask">Ask about this fund</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+            </div>
+            <div class="s-card" data-query="What is the investment objective of SBI Flexicap Fund?">
+                <div class="sc-top sc-top-2"><div class="sc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div><span class="sc-cat">Flexi Cap · Equity</span></div>
+                <h3 class="sc-name">SBI Flexicap Fund</h3>
+                <p class="sc-desc">Dynamically allocates across large, mid & small cap segments based on market conditions.</p>
+                <div class="sc-sources"><span>Factsheet</span><span>SID</span><span>KIM</span><span>Scheme Page</span></div>
+                <div class="sc-footer"><span class="sc-ask">Ask about this fund</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+            </div>
+            <div class="s-card" data-query="What is the lock-in period for SBI ELSS Tax Saver Fund?">
+                <div class="sc-top sc-top-3"><div class="sc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><span class="sc-cat">ELSS · Tax Saving</span></div>
+                <h3 class="sc-name">SBI ELSS Tax Saver Fund</h3>
+                <p class="sc-desc">Equity-linked savings scheme with 3-year lock-in, eligible for deduction under Section 80C.</p>
+                <div class="sc-sources"><span>Factsheet</span><span>SID</span><span>KIM</span><span>Scheme Page</span></div>
+                <div class="sc-footer"><span class="sc-ask">Ask about this fund</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+            </div>
+            <div class="s-card" data-query="What is the expense ratio of SBI Small Cap Fund?">
+                <div class="sc-top sc-top-4"><div class="sc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></div><span class="sc-cat">Small Cap · Equity</span></div>
+                <h3 class="sc-name">SBI Small Cap Fund</h3>
+                <p class="sc-desc">Targets small-cap stocks for high growth potential. Suited for long-term investors with higher risk appetite.</p>
+                <div class="sc-sources"><span>Factsheet</span><span>SID</span><span>KIM</span><span>Scheme Page</span></div>
+                <div class="sc-footer"><span class="sc-ask">Ask about this fund</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="foot">
+    <div class="sec-c foot-c">
+        <div class="foot-top">
+            <div class="foot-brand"><div class="n-logo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="3"/></svg></div><span>SBI MF Assistant</span></div>
+            <p class="foot-disc">This chatbot provides factual information only from official SBI Mutual Fund sources. It does not provide investment advice, recommendations, or performance comparisons. For investment guidance, consult a SEBI-registered financial advisor.</p>
+        </div>
+        <div class="foot-bottom">
+            <div class="foot-links"><a href="https://www.sbimf.com" target="_blank">sbimf.com</a><a href="https://www.mutualfundssahihai.com" target="_blank">Mutual Funds Sahi Hai</a></div>
+            <span class="foot-copy">Built by Manav · 2026</span>
+        </div>
+    </div>
+</footer>
+
+<!-- FLOATING CHAT PANEL (hidden until FAB clicked) -->
+<div class="fp" id="fp">
+    <div class="fp-hd">
+        <div class="fp-hd-l">
+            <div class="fp-ava"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="3"/></svg></div>
+            <div><p class="fp-name">SBI MF Assistant</p><p class="fp-status"><span class="fp-dot"></span>Online</p></div>
+        </div>
+        <div class="fp-hd-r">
+            <button class="fp-btn" id="threadToggle" title="Threads"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></button>
+            <button class="fp-btn" id="fpNew" title="New chat"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        </div>
+    </div>
+    <div class="fp-drawer" id="fpDrawer">
+        <div class="fpd-hd"><span>Conversations</span><button class="fpd-close" id="fpDrawerClose"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+        <div class="fpd-list" id="threadList"></div>
+    </div>
+    <div class="fp-msgs" id="messages"></div>
+    <div class="fp-inp">
+        <div class="fp-inp-row">
+            <input type="text" id="chatInput" placeholder="Ask about SBI Mutual Funds..." autocomplete="off">
+            <button class="fp-send" id="sendBtn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+        </div>
+    </div>
+</div>
+
+<!-- FAB BUTTON -->
+<button class="fab" id="fab">
+    <svg class="fab-open" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <svg class="fab-close" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</button>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+{
+  "dynamic": [
+    {
+      "url": "https://www.sbimf.com/sbimf-scheme-details/sbi-large-cap-fund-(formerly-known-as-sbi-bluechip-fund)-43",
+      "scheme_name": "SBI Large Cap Fund",
+      "doc_type": "scheme_page",
+      "source_type": "html",
+      "scrape_frequency": "daily"
+    },
+    {
+      "url": "https://www.sbimf.com/sbimf-scheme-details/sbi-flexicap-fund-39",
+      "scheme_name": "SBI Flexicap Fund",
+      "doc_type": "scheme_page",
+      "source_type": "html",
+      "scrape_frequency": "daily"
+    },
+    {
+      "url": "https://www.sbimf.com/sbimf-scheme-details/sbi-elss-tax-saver-fund-(formerly-known-as-sbi-long-term-equity-fund)-3",
+      "scheme_name": "SBI ELSS Tax Saver Fund",
+      "doc_type": "scheme_page",
+      "source_type": "html",
+      "scrape_frequency": "daily"
+    },
+    {
+      "url": "https://www.sbimf.com/sbimf-scheme-details/sbi-small-cap-fund-329",
+      "scheme_name": "SBI Small Cap Fund",
+      "doc_type": "scheme_page",
+      "source_type": "html",
+      "scrape_frequency": "daily"
+    },
+    {
+      "url": "https://www.sbimf.com/faq",
+      "scheme_name": "general",
+      "doc_type": "faq",
+      "source_type": "html",
+      "scrape_frequency": "daily"
+    },
+    {
+      "url": "https://online.sbimf.com/statement",
+      "scheme_name": "general",
+      "doc_type": "statement_guide",
+      "source_type": "html",
+      "scrape_frequency": "daily"
+    },
+    {
+      "url": "https://investor.sebi.gov.in/riskometer.html",
+      "scheme_name": "general",
+      "doc_type": "riskometer_guide",
+      "source_type": "html",
+      "scrape_frequency": "daily"
+    }
+  ],
+  "static": [
+    {
+      "url": "https://www.sbimf.com/docs/default-source/scheme-factsheets/sbi-largecap-fund-factsheet-february-2026.pdf",
+      "scheme_name": "SBI Large Cap Fund",
+      "doc_type": "factsheet",
+      "source_type": "pdf",
+      "scrape_frequency": "manual"
+    },
+    {
+      "url": "https://www.sbimf.com/docs/default-source/sif-forms/sid---sbi-large-cap-fund-(formerly-known-as-bluechip-fund).pdf",
+      "scheme_name": "SBI Large Cap Fund",
+      "doc_type": "sid",
+      "source_type": "pdf",
+      "scrape_frequency": "manual"
+    },
+    {
+      "url": "https://www.sbimf.com/docs/default-source/sif-forms/kim---sbi-large-cap-fund-(formerly-known-as-bluechip-fund).pdf",
+      "scheme_name": "SBI Large Cap Fund",
+      "doc_type": "kim",
+      "source_type": "pdf",
+      "scrape_frequency": "manual"
+    },
+    {
+      "url": "https://www.sbimf.com/docs/default-source/scheme-factsheets/sbi-flexicap-fund-factsheet-february-2026.pdf",
+      "scheme_name": "SBI Flexicap Fund",
+      "doc_type": "factsheet",
+      "source_type": "pdf",
+      "scrape_frequency": "manual"
+    },
+    {
+      "url": "https://www.sbimf.com/docs/default-source/sif-forms/sid---sbi-flexicap-fund.pdf",
+      "scheme_name": "SBI Flexicap Fund",
+      "doc_type": "sid",
+      "source_type": "pdf",
+      "scrape_frequency": "manual"
+    },
+    {
+      "url": "https://www.sbimf.com/docs/default-source/sif-forms/kim---sbi-flexicap-fund.pdf",
+      "scheme_name": "SBI Flexicap Fund",
+      "doc_type": "kim",
+      "source_type": "pdf",
+      "scrape_frequency": "manual"
+    },
+    {
+      "url": "https://www.sbimf.com/docs/default-source/scheme-factsheets/sbi-elss-tax-saver-fund-factsheet-february-2026.pdf",
+      "scheme_name": "SBI ELSS Tax Saver Fund",
+      "doc_type": "factsheet",
+      "source_type": "pdf",
+      "scrape_frequency": "manual"
+    },
+    {
+      "url": "https://www.sbimf.com/docs/default-source/sif-forms/sid---sbi-elss-tax-saver-fund.pdf",
+      "scheme_name": "SBI ELSS Tax Saver Fund",
+      "doc_type": "sid",
+      "source_type": "pdf",
+      "scrape_frequency": "manual"
+    },
+    {
+      "url": "https://www.sbimf.com/docs/default-source/sif-forms/kim---sbi-elss-tax-saver-fund-(formerly-known-as-sbi-long-term-equity-fund).pdf",
+      "scheme_name": "SBI ELSS Tax Saver Fund",
+      "doc_type": "kim",
+      "source_type": "pdf",
+      "scrape_frequency": "manual"
+    },
+    {
+      "url": "https://www.sbimf.com/docs/default-source/scheme-factsheets/sbi-small-cap-fund-factsheet-february-2026.pdf",
+      "scheme_name": "SBI Small Cap Fund",
+      "doc_type": "factsheet",
+      "source_type": "pdf",
+      "scrape_frequency": "manual"
+    },
+    {
+      "url": "https://www.sbimf.com/docs/default-source/sif-forms/sid---sbi-small-cap-fund.pdf",
+      "scheme_name": "SBI Small Cap Fund",
+      "doc_type": "sid",
+      "source_type": "pdf",
+      "scrape_frequency": "manual"
+    },
+    {
+      "url": "https://www.sbimf.com/docs/default-source/sif-forms/kim---sbi-small-cap-fund.pdf",
+      "scheme_name": "SBI Small Cap Fund",
+      "doc_type": "kim",
+      "source_type": "pdf",
+      "scrape_frequency": "manual"
+    }
+  ]
+}

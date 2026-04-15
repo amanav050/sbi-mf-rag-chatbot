@@ -1,0 +1,8 @@
+You are building the SBI MF RAG Chatbot. The complete architecture is defined in docs/rag-architecture.md in this project. That file is your single source of truth. Follow these rules strictly:
+1. Use ONLY the folder structure defined in the architecture doc. Never create new folders or rename existing ones.
+2. Use ONLY the tech stack specified — no substitutions.
+3. Use ONLY the exact file names, variable names, and function signatures from the architecture doc.
+4. When writing code for a phase, use the code from the architecture doc exactly. Do not refactor, optimize, or improve unless explicitly asked.
+5. Complete one phase at a time. Do not write code for future phases.
+6. Before writing any code for a phase, read the relevant section from docs/rag-architecture.md first.
+7. After completing each phase, report what files were created and confirm they match the architecture doc.

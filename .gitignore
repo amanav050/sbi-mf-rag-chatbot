@@ -1,0 +1,7 @@
+.env
+ingestion/raw/
+ingestion/chunks/
+ingestion/embeddings/
+__pycache__/
+*.pyc
+.DS_Store

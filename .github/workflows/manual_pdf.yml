@@ -1,0 +1,39 @@
+name: Manual PDF Ingestion
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ingest_pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run PDF ingestor
+        env:
+          CHROMA_API_KEY: ${{ secrets.CHROMA_API_KEY }}
+          CHROMA_TENANT: ${{ secrets.CHROMA_TENANT }}
+          CHROMA_DATABASE: ${{ secrets.CHROMA_DATABASE }}
+        run: python ingestion/router.py --mode static
+
+      - name: Run chunker
+        run: python ingestion/phase_3_chunker/chunker.py
+
+      - name: Run embedder
+        run: python ingestion/phase_4_embedder/embedder.py
+
+      - name: Upsert to Chroma Cloud
+        env:
+          CHROMA_API_KEY: ${{ secrets.CHROMA_API_KEY }}
+          CHROMA_TENANT: ${{ secrets.CHROMA_TENANT }}
+          CHROMA_DATABASE: ${{ secrets.CHROMA_DATABASE }}
+        run: python ingestion/phase_5_vector_db/vector_db.py
