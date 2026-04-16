@@ -1,3 +1,22 @@
+---
+title: SBI MF RAG Chatbot
+emoji: 💰
+colorFrom: indigo
+colorTo: green
+sdk: docker
+app_port: 8000
+pinned: false
+---
+
+# SBI MF RAG Chatbot
+
+A production-ready, facts-only RAG chatbot for SBI Mutual Fund schemes. Provides cited, factual answers from official SBI MF documents.
+
+
+
+
+
+
 # SBI MF RAG Chatbot
 
 A production-ready, facts-only RAG (Retrieval-Augmented Generation) chatbot that answers queries about SBI Mutual Fund schemes using only official public sources.
