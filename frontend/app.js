@@ -1,4 +1,4 @@
-const API_URL = "https://sbi-mf-rag-chatbot.onrender.com/chat";
+const API_URL = "https://amanav050-sbi-mf-rag-chatbot.hf.space/chat";
 let threads = [], activeId = null, chatOpen = false, drawerOpen = false;
 
 function gid() { return "t_" + Math.random().toString(36).substr(2, 9) + Date.now(); }
