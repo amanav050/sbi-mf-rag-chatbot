@@ -27,8 +27,10 @@ def get_model():
 def get_collection():
     global _collection
     if _collection is None:
-        client = chromadb.CloudClient(
-            api_key=os.getenv("CHROMA_API_KEY"),
+        client = chromadb.HttpClient(
+            host="api.trychroma.com",
+            ssl=True,
+            headers={"x-chroma-token": os.getenv("CHROMA_API_KEY")},
             tenant=os.getenv("CHROMA_TENANT"),
             database=os.getenv("CHROMA_DATABASE")
         )

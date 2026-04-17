@@ -13,8 +13,12 @@ UPSERT_BATCH_SIZE = 100
 
 
 def get_chroma_client():
-    return chromadb.CloudClient(
-        api_key=os.getenv("CHROMA_API_KEY"),
+    return chromadb.HttpClient(
+        host="api.trychroma.com",
+        ssl=True,
+        headers={
+            "x-chroma-token": os.getenv("CHROMA_API_KEY")
+        },
         tenant=os.getenv("CHROMA_TENANT"),
         database=os.getenv("CHROMA_DATABASE")
     )
