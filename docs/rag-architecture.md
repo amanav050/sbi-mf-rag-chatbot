@@ -46,7 +46,7 @@ This document is the **SINGLE SOURCE OF TRUTH** for the SBI MF RAG Chatbot proje
 | Embedding | sentence-transformers bge-small-en-v1.5 (local, free) | No API cost |
 | Vector DB | Chroma Cloud (trychroma.com) | Managed, free tier |
 | Scheduler | GitHub Actions CRON | Free CI/CD |
-| LLM | Groq API — llama-3.1-8b-instant | Fast, free tier |
+| LLM | Groq API — openai/gpt-oss-20b | Fast, free tier |
 | API | FastAPI + uvicorn | Async, auto-docs |
 | UI | Plain HTML + CSS + JS (no frameworks) | Lightweight |
 
@@ -1201,7 +1201,7 @@ def retrieve(query: str) -> list[dict]:
 **File to create:** `llm_handler.py`
 
 **Key parameters:**
-- Model: `llama-3.1-8b-instant`
+- Model: `openai/gpt-oss-20b`
 - max_tokens: 300
 - temperature: 0.1 (low = more factual)
 
@@ -1229,7 +1229,7 @@ from groq import Groq
 load_dotenv()
 logger = logging.getLogger(__name__)
 
-GROQ_MODEL = "llama-3.1-8b-instant"
+GROQ_MODEL = "openai/gpt-oss-20b"
 MAX_TOKENS = 300
 TEMPERATURE = 0.1
 
@@ -1292,7 +1292,7 @@ def generate_response(query: str, chunks: list[dict]) -> dict:
 **Completion checklist:**
 - [ ] query/phase_8_llm/llm_handler.py exists with exact code
 - [ ] System prompt matches exactly
-- [ ] Model = llama-3.1-8b-instant
+- [ ] Model = openai/gpt-oss-20b
 - [ ] temperature = 0.1, max_tokens = 300
 
 ---
@@ -1594,7 +1594,7 @@ HTML scrape → chunk → embed → upsert runs automatically at 9:15 AM IST on 
 Same but router filters `source_type=pdf`, `pdf_ingestor.py` downloads PDF, extracts page-by-page with `[PAGE N]` markers using PyMuPDF (pdfplumber fallback for empty pages), saves `.pdf` + `.txt` + `.json` to `raw/pdf/`, then same chunker → embedder → vector_db flow
 
 ### Query Pipeline
-`POST /chat` → `refusal_handler` checks advisory patterns (if yes, return refusal immediately) → `retriever.py` prefixes query with `"Represent this sentence for searching relevant passages: "`, embeds it, queries Chroma top 5, filters distance > 0.8 → if no chunks, return `"not found"` → `llm_handler.py` builds context, calls Groq (llama-3.1-8b-instant, temp=0.1, max_tokens=300) → `citation_formatter` appends source URL + `scraped_date` → return to user
+`POST /chat` → `refusal_handler` checks advisory patterns (if yes, return refusal immediately) → `retriever.py` prefixes query with `"Represent this sentence for searching relevant passages: "`, embeds it, queries Chroma top 5, filters distance > 0.8 → if no chunks, return `"not found"` → `llm_handler.py` builds context, calls Groq (openai/gpt-oss-20b, temp=0.1, max_tokens=300) → `citation_formatter` appends source URL + `scraped_date` → return to user
 
 ---
 

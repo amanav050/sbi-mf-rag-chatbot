@@ -7,7 +7,7 @@
 ## Verification Checklist
 
 ### Model Configuration
-- [x] Model is llama-3.1-8b-instant
+- [x] Model is openai/gpt-oss-20b
 - [x] GROQ_MODEL constant set correctly
 - [x] Uses Groq API client with GROQ_API_KEY from environment
 

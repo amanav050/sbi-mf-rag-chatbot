@@ -6,7 +6,7 @@ from groq import Groq
 load_dotenv()
 logger = logging.getLogger(__name__)
 
-GROQ_MODEL = "llama-3.1-8b-instant"
+GROQ_MODEL = "openai/gpt-oss-20b"
 MAX_TOKENS = 300
 TEMPERATURE = 0.1
 

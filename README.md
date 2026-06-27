@@ -27,7 +27,7 @@ This chatbot provides factual information about SBI Mutual Fund schemes through 
 - Scrapes official SBI MF web pages and documents
 - Processes content through chunking and embedding
 - Stores vectors in Chroma Cloud for fast retrieval
-- Generates responses using Groq's Llama 3.1 model
+- Generates responses using Groq's openai/gpt model
 - Always cites sources and provides no investment advice
 
 ## 📊 Selected AMC & Schemes

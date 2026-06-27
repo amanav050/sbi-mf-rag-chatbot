@@ -11,6 +11,7 @@ async function api(q, sid) {
     return r.json();
 }
 
+
 function toggleChat() {
     chatOpen = !chatOpen;
     document.getElementById("fp").classList.toggle("open", chatOpen);
